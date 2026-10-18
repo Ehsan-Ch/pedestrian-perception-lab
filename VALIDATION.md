@@ -14,6 +14,8 @@ Coverage includes letterbox/channel order, known synthetic YOLOX decoding, dupli
 
 These tests require neither a model download nor dataset downloads; they inspect the committed results. The GitHub workflow runs Python 3.11 and 3.12. A workflow file does not establish successful GitHub execution; account billing restrictions may prevent runners from starting.
 
+Publication check: [GitHub Actions run 39116378435](https://github.com/Ehsan-Ch/pedestrian-perception-lab/actions/runs/39116378435) did not execute the tests. GitHub reported that the job could not start because the account was locked due to a billing issue; the other matrix job was canceled. This is an account-level runner block. The 36 passing tests reported above were executed locally.
+
 ## Browser checks
 
 The dashboard rendered real driving images, measured summary values, detector boxes, missed-pedestrian annotations, and image-space warning zones. Scene 000384 showed 7 matched / 5 missed on original input and 6 matched / 6 missed under dimming. Original, dimmed and HOG results remain separately accessible.
