@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "pedestrian-perception-lab"
+version = "1.0.0"
+description = "Auditable pedestrian detection in driving images with visual warning-zone experiments"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "opencv-python-headless>=4.10,<5"]
+[project.scripts]
+pedestrian-lab = "pedestrian_lab.cli:main"
+[tool.setuptools.packages.find]
+include = ["pedestrian_lab*"]
